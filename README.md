@@ -13,6 +13,7 @@ Todo list application built with React. Allows users to add, delete, and mark ta
 - Delete tasks
 - Filter tasks by completion status
 - Persist tasks in local storage
+- Responsive for all screen types
 
 ## Technologies Used
 
