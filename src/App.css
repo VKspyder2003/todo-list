@@ -1,0 +1,18 @@
+body {
+    background-color: #f0f0f0; 
+    background-image: linear-gradient(to bottom, #809af2, #cc81e0); 
+}
+
+.App {
+    text-align: center;
+}
+
+.todo-app {
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-top: 50px;
+    min-height: 500px; /* Set the minimum height */
+}
+
+
