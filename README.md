@@ -2,7 +2,7 @@
 
 # Todo List App
 
-This is a simple todo list application built with React. It allows users to add, delete, and mark tasks as complete/incomplete. Users can also filter tasks based on their completion status.
+Todo list application built with React. Allows users to add, delete, and mark tasks as complete/incomplete. Users can also filter tasks based on their completion status.
 
 ## Features
 
