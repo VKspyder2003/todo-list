@@ -15,7 +15,7 @@ const Reward = ({ onRewardComplete }) => {
         if (isRewardVisible) {
             // Delay before the animation
             const timeoutId = setTimeout(() => setIsConfettiActive(true), 100);
-            return () => clearTimeout(timeoutId); 
+            return () => clearTimeout(timeoutId);
         }
     }, [isRewardVisible]);
 
@@ -31,6 +31,7 @@ const Reward = ({ onRewardComplete }) => {
             <h2>Congratulations! You completed all tasks.</h2>
             {isConfettiActive && (
                 <Confetti
+                    style={{ position: 'fixed', top: 0, left: 0, zIndex: 9999 }}
                     width={window.innerWidth}
                     height={window.innerHeight}
                     numberOfPieces={300}

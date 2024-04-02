@@ -27,7 +27,7 @@ const TaskList = ({ tasks, toggleTask, deleteTask, filterType }) => {
             <List>
                 {/* Map over the filteredTasks array to create a list item for each task */}
                 {filteredTasks.map((task) => (
-                    <ListItem key={task.id} button onClick={() => toggleTask(task.id)} style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>
+                    <ListItem key={task.id} button onClick={() => toggleTask(task.id)} style={{ textDecoration: task.completed ? 'line-through' : 'none', border: '2px solid grey', borderRadius: '10px', marginTop: '5px' }}>
                         {/* Checkbox to mark tasks as completed without deleting them */}
                         <Checkbox
                             edge="start"
@@ -51,7 +51,7 @@ const TaskList = ({ tasks, toggleTask, deleteTask, filterType }) => {
             <Typography color="GrayText">
                 Total tasks: {tasks.length} | Completed: {completedTasks} | Remaining: {remainingTasks}
             </Typography>
-            
+
             {/* Render the Reward component if all tasks are completed */}
             {filteredTasks.length > 0 && remainingTasks === 0 && <Reward />}
         </>
